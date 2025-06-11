@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Your Site Title"
-email: &EMAIL "username@example.edu"
+email: &EMAIL "stoert1@stolaf.edu"
 description:
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -25,25 +25,25 @@ search: true
 
 
 author:
-  name   : "First Lastname"
+  name   : "Daniel Stoertz"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "✉ Email"
       icon: "fab"
       url: !join ["mailto:", *EMAIL]
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: !join ["https://github.com/", *GITHUB]
+    #- label: "GitHub"
+    #  icon: "fab fa-fw fa-github"
+    #  url: !join ["https://github.com/", *GITHUB]
 
 footer:
   links:
     - label: "Email"
       icon: "fab fa-fw fa-envelope"
       url: !join ["mailto:", *EMAIL]
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: !join ["https://github.com/", *GITHUB]
+    #- label: "GitHub"
+    #  icon: "fab fa-fw fa-github"
+    #  url: !join ["https://github.com/", *GITHUB]
 
 # Build settings
 markdown: kramdown
@@ -74,10 +74,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      read_time: false
+      comments: false
+      share: false
+      related: false
   # _pages
   - scope:
       path: "_pages"
